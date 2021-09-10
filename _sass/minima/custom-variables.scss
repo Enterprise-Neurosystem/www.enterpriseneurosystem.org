@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// Set responsive breakpoints for minima
+// (same as what's used for Gridlex — so the two align)
+$on-palm:          35.5em;
+$on-laptop:        48em;
+
+$content-width:    48em;
+
+@import url('https://fonts.googleapis.com/css?family=Copse|Share+Tech+Mono');
+$base-font-family: 'Copse', sans-serif;
+$base-font-size: 18px;
+$base-font-weight: 200;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+$mono-font-family: 'Share Tech Mono', monospace;
+
+$spacing-unit: 1rem;
+
+$text-color: #def;
+$background-color: #777;
+$brand-color: #b3d1ff;
+

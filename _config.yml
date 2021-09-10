@@ -1,0 +1,53 @@
+---
+title: Enterprise Neurosystem
+description: "Open source AI project - cross-correlation across disciplines and domains"
+lang: en
+baseurl: ""
+url: "https://www.enterpriseneurosystem.org/"
+logo: /assets/images/logo.png
+
+# Build settings
+strict_front_matter: true
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+minima:
+  skin: dark
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  parse_block_html: true
+  parse_span_html: true
+
+# Don't compile these files/dirs into the website
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin
+  # used for local installation of gems
+  - vendor
+  - README.md
+  - README_ORGANIZATION.md
+  - MAINTAINING.md
+  - LICENSE.md
+  - CONTRIBUTING.md
+  - CODEOWNERS
+
+favicon:
+  # DO NOT use the name of a file used as assets
+  # as jekyll-favicon automatically exclude the source file
+  source: assets/images/favicon.png
+  path: assets/images/
+  backgroup: '353b69'
+
+header_pages: []
+
+show_excerpts: true

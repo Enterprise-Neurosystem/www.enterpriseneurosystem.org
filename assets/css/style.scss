@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+// custom style are in _sass/minima/custom-styles.scss
+// with variables in _sass/minima/custom-variables.scss
+// the following requires access to site variables
+// and thus cannot be added to these files because they are not templated
+
+// minima authors do not want to add logo support
+// https://github.com/jekyll/minima/issues/518
+.site-title::before {
+	content: url("{{ site.logo }}");
+	display: inline-block;
+    float: left;
+	position: relative;
+	height: 60px;
+    top: 0px;
+    right: 130px;
+    // image is too big and there's no way to style the content
+    transform: scale(.3)
+}
+
+// also support displaying the description
+.site-title::after {
+    content: "{{ site.description | escape }}";
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    font-family: $mono-font-family;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $base-font-size;
+}
+

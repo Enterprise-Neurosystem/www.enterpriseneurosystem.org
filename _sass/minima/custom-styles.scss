@@ -1,0 +1,35 @@
+// Import gridlex (see https://gridlex.devlint.fr/ for docs)
+@import "vendor/gridlex";
+
+body {
+    background-color: black;
+    background-image: url("/assets/images/background.png");
+    background-size: tile;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $base-font-family;
+}
+
+.site-header, .site-footer {
+    background: rgba(black, 0.4)
+}
+
+.site-title, .site-title:visited {
+    line-height: 45px;
+    color: $text-color;
+}
+
+// limit images' size as authors do not necessarily resize _huge_ images
+.post-content img, .post-list img {
+    max-height: 500px;
+    width: auto;
+    text-align: center;
+
+    // also center horizontally
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
