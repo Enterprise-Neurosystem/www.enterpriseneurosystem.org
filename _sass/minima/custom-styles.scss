@@ -3,7 +3,7 @@
 
 body {
     background-color: black;
-    background-image: url("/assets/images/background.png");
+    background-image: url($baseurl + "/assets/images/background.png");
     background-size: tile;
     background-attachment: fixed;
 }
