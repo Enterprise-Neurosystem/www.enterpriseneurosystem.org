@@ -2,7 +2,9 @@
 title: Enterprise Neurosystem
 description: "Open source AI project - cross-correlation across disciplines and domains"
 lang: en
-baseurl: ""
+# TODO: remove when switching to the custom domain
+baseurl: "www.enterpriseneurosystem.org"
+#baseurl: ""
 url: "https://www.enterpriseneurosystem.org/"
 logo: /assets/images/logo.png
 
